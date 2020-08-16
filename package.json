@@ -1,0 +1,46 @@
+{
+	"name": "rainbow-fart-waifu",
+	"displayName": "rainbow-fart-waifu",
+	"description": "a virtual lover will ccompany with your programing",
+	"version": "0.0.1",
+	"publisher": "ezshine",
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:rainbow-fart-waifu.enable"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "rainbow-fart-waifu.enable",
+				"title": "🌈 Enable Rainbow Fart Waifu"
+			},
+			{
+				"command": "rainbow-fart-waifu.openResourceDir",
+				"title": "🌈 Open Rainbow Fart Waifu Dir"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.48.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.0",
+		"@types/node": "^14.0.27",
+		"eslint": "^7.6.0",
+		"glob": "^7.1.6",
+		"mocha": "^8.0.1",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.4.0"
+	},
+	"dependencies": {}
+}

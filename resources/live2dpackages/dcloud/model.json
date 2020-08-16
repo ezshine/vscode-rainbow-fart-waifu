@@ -1,0 +1,32 @@
+{
+	"Version": 3,
+	"FileReferences": {
+		"Moc": "two.moc3",
+		"Textures": [
+			"two.2048/texture_00.png"
+		],
+		"Physics": "two.physics3.json"
+	},
+	"layout":{
+		"width":5,
+		"center_x":0.1,
+		"center_y":-0.8
+	},
+	"Groups": [
+		{
+			"Target": "Parameter",
+			"Name": "EyeBlink",
+			"Ids": [
+				"ParamEyeLOpen",
+				"ParamEyeROpen",
+				"ParamBrowLY",
+				"ParamBrowRY"
+			]
+		},
+		{
+			"Target": "Parameter",
+			"Name": "LipSync",
+			"Ids": []
+		}
+	]
+}
