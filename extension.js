@@ -223,6 +223,12 @@ function activate(context) {
 	});
 
 	context.subscriptions.push(disposable2);
+
+	let disposable3 = vscode.commands.registerCommand('rainbow-fart-waifu.openwebsite', function () {
+		vscode.env.openExternal("https://rfw.jnsii.com");
+	});
+
+	context.subscriptions.push(disposable3);
 }
 exports.activate = activate;
 
