@@ -2,7 +2,7 @@
 
 Website：https://rfw.jnsii.com
 
-Languages: [简体中文](./README.zh.md) | English
+Languages: [简体中文](https://github.com/ezshine/vscode-rainbow-fart-waifu/blob/master/README.zh.md) | English
 
 this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart), rewrite all the code. compatible all voicepackages, and add some new features.
 
