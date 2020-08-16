@@ -2,7 +2,7 @@
 
 官网：https://rfw.jnsii.com
 
-Languages: 简体中文 | [English](https://github.com/ezshine/vscode-rainbow-fart-waifu/blob/master/README.md)
+Languages: 简体中文 | [English](./README.md)
 
 此插件的创意来自 [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart) ，兼容原版的语音包。并在功能上做了一些改进
 

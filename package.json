@@ -7,6 +7,9 @@
 	"engines": {
 		"vscode": "^1.48.0"
 	},
+	"repository": {
+		"url": "https://github.com/ezshine/vscode-rainbow-fart-waifu"
+	},
 	"categories": [
 		"Other"
 	],
