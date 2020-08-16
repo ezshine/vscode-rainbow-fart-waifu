@@ -1,10 +1,13 @@
-# rainbow-fart-waifu README
+# 🌈 Rainbow Fart Waifu
 
 Website：https://rfw.jnsii.com
 
 Languages: [简体中文](./README.zh.md) | English
 
-this extension from @SaekiRaku's rainbow-fart ext, rewrite all the code. compatible all voicepackages, and add some new features.
+this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart), rewrite all the code. compatible all voicepackages, and add some new features.
+
+## Supported IDE & Platform
+Only supported MacOS and Windows10
 
 ## Special Thanks
 
@@ -40,7 +43,5 @@ this extension from @SaekiRaku's rainbow-fart ext, rewrite all the code. compati
 ]
 ~~~~
 
-## Supported Platform
-Only supported MacOS and Windows10
 
 **Enjoy!**

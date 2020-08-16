@@ -29,24 +29,10 @@ async function enabledRainbowFartWaifu(){
 	debugLog("当前时间：" + Date.now());
 	ostype = os.type;
 	debugLog("当前系统：" + ostype);
-
-	// client.shout("say", {
-	// 	text: "hahaha"
-	// });
-
-	resources_dir = path.posix.join(__dirname, "resources");
 	
-	// if (!fs.existsSync(resources_dir)) {
-	// 	console.log("插件资源初始化...");
-	// 	await extractZipFile(path.posix.join(__dirname, "resources.zip"), resources_dir).then(() => {
-	// 		console.log("初始化成功");
-	// 	});
-	// }
-
 	const mp3Player = (ostype == "Darwin" ? "afplay" : path.posix.join(resources_dir, "players", "mp3player.exe"));
 
 	setupVoicePackage();
-
 
 	//时间标记名称，用于计算每一个时间标记提醒仅提醒一次
 	let voice_mark = "";
@@ -213,7 +199,7 @@ function setupVoicePackage() {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-
+	resources_dir = path.posix.join(__dirname, "resources");
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "rainbow-fart-waifu" is now active!');
@@ -230,6 +216,13 @@ function activate(context) {
 	});
 
 	context.subscriptions.push(disposable);
+
+	let disposable2 = vscode.commands.registerCommand('rainbow-fart-waifu.opendir', function () {
+		let openpath = path.posix.join("file:", resources_dir);
+		vscode.env.openExternal(openpath);
+	});
+
+	context.subscriptions.push(disposable2);
 }
 exports.activate = activate;
 
