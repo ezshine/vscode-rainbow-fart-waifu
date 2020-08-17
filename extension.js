@@ -207,7 +207,7 @@ function showRFWCommands(){
 			"Switch Voice Packages",
 			"Switch Waifu Model",
 			"Open Resource Directory",
-			"Download More Waifu Model or Voice Packages"
+			"Download Waifu Container and More Resources"
 		],
 		{
 			canPickMany:false,
@@ -223,7 +223,7 @@ function showRFWCommands(){
 			quickPickWaifuModel();
 		}else if(msg === "Open Resource Directory"){
 			openResourceDir();
-		}else if(msg === "Download More Waifu Model or Voice Packages"){
+		}else if(msg === "Download Waifu Container and More Resources"){
 			openWebsite();
 		}
 	})

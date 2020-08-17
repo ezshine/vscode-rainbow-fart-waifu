@@ -15,6 +15,8 @@ Languages: 简体中文 | [English](./README.md)
 
 > 3.插件中默认的老婆模型来自插画师 [@二夏](https://erxia207.lofter.com)，如果你想原创自己的老婆，可以找她约稿哦。
 
+> 4.插件中还包含了一款开源的血小板模型，由来自 [@DenchiSoft](https://twitter.com/DenchiSoft/status/1036017773011525632) 提供。
+
 ## 支持的平台
 
 > 仅支持MacOS和Windows10

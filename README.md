@@ -15,6 +15,8 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 
 > 3.the default waifu model from [@二夏](https://erxia207.lofter.com)，if you want to design a original waifu only belong to you, contact her.
 
+> 4.the extension include another waifu model named keysoban, opensource by [@DenchiSoft](https://twitter.com/DenchiSoft/status/1036017773011525632).
+
 ## Supported Platform
 
 > Only supported MacOS and Windows10
