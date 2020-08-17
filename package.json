@@ -1,8 +1,9 @@
 {
 	"name": "rainbow-fart-waifu",
+	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "a virtual lover will accompany with your programing time",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"publisher": "ezshine",
 	"engines": {
 		"vscode": "^1.48.0"
