@@ -10,7 +10,9 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 ## Special Thanks
 
 > 1.the extension included two voicepackages from [@justkowalski](https://github.com/JustKowalski)，[@PGG: 糖糖](https://github.com/heixiaobai/rainbow-fart-voice-pack).
+
 > 2.the extension included cmdmp3win.exe，from [@James K. Lawless](http://jiml.us)
+
 > 3.the default waifu model from [@二夏](https://erxia207.lofter.com)，if you want to design a original waifu only belong to you, contact her.
 
 ## Supported Platform
@@ -26,13 +28,16 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 ## Features
 
 > 1.Removed the WebUI, play audio file used 'afplay' in MacOS and 'cmdmp3win' in Windows10.
+
 > 2.Interact with WaifuContainer, Put an virtual wife on your desktop accompany your programing time.
 
 ## VoicePackage Notice
 > some notice for customize voice package or use voice package download from the internet
 
 > 1.use 'contributes.json' not 'manifest.json'.
+
 > 2.add texts in 'contributes.json' for match voice content.
+
 ~~~~javascript
 "contributes": [
     {
