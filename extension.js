@@ -142,7 +142,7 @@ async function enabledRainbowFartWaifu(){
 				// if (motions) {
 				// 	motionfile = motions[Math.floor(Math.random() * motions.length)];
 				// }
-				// showWifeMotion(motionfile);
+				showWifeMotion();
 
 				//检查彩虹屁是否有台词文本，如果有则显示
 				if (hited_item.texts) {
@@ -156,6 +156,12 @@ async function enabledRainbowFartWaifu(){
 
 function debugLog(str){
 	console.log(str);
+}
+
+function changeWifeModel(){
+	client.shout("changeModel", {
+		model: path.posix.join(lpPath, "model.json")
+	});
 }
 
 function showWifeMotion(motionfile) {
@@ -195,6 +201,100 @@ function setupVoicePackage() {
 }
 
 
+function showRFWCommands(){
+	vscode.window.showQuickPick(
+		[
+			"Switch Voice Packages",
+			"Switch Waifu Model",
+			"Open Resource Directory",
+			"Download More Waifu Model or Voice Packages"
+		],
+		{
+			canPickMany:false,
+			ignoreFocusOut:false,
+			matchOnDescription:true,
+			matchOnDetail:true,
+			placeHolder:'🌈 Rainbow Fart Waifu Commands'
+		})
+	.then(function(msg){
+		if(msg === "Switch Voice Packages"){
+			quickPickVoicePackages();
+		}else if(msg === "Switch Waifu Model"){
+			quickPickWaifuModel();
+		}else if(msg === "Open Resource Directory"){
+			openResourceDir();
+		}else if(msg === "Download More Waifu Model or Voice Packages"){
+			openWebsite();
+		}
+	})
+}
+
+function quickPickVoicePackages(){
+	var vpDir = path.posix.join(resources_dir, "voicepackages");
+	var res = [],
+		files = fs.readdirSync(vpDir);
+	files.forEach(function(filename) {
+		var filepath = path.posix.join(vpDir, filename),
+			stat = fs.lstatSync(filepath);
+
+		if (stat.isDirectory()) {
+			res.push({
+				label: filename,
+				description: (filename == voicePackageName ? "使用中" : "")
+			});
+		}
+	});
+
+	const pickResult = vscode.window.showQuickPick(res, {
+		placeHolder: 'Switch Voice Packages'
+	});
+	pickResult.then(function(result) {
+		if (!result) {
+			return;
+		}
+		if (result.description == "") {
+			voicePackageName = result.label;
+			setupVoicePackage();
+		}
+	});
+}
+
+function quickPickWaifuModel(){
+	var vpDir = path.posix.join(resources_dir, "live2dpackages");
+	var res = [],
+		files = fs.readdirSync(vpDir);
+	files.forEach(function(filename) {
+		var filepath = path.posix.join(vpDir, filename),
+			stat = fs.lstatSync(filepath);
+
+		if (stat.isDirectory()) {
+			res.push(filename);
+		}
+	});
+
+	const pickResult = vscode.window.showQuickPick(res, {
+		placeHolder: 'Switch Waifu Model'
+	});
+	pickResult.then(function(result) {
+		if (!result) {
+			return;
+		}
+
+		lpPath = path.posix.join(vpDir,result);
+		changeWifeModel();
+	});
+}
+
+function openResourceDir(){
+	let openpath = path.posix.join("file:", resources_dir);
+	vscode.env.openExternal(openpath);
+}
+
+function openWebsite(){
+	vscode.env.openExternal("https://rfw.jnsii.com");
+}
+
+
 /**
  * @param {vscode.ExtensionContext} context
  */
@@ -217,18 +317,11 @@ function activate(context) {
 
 	context.subscriptions.push(disposable);
 
-	let disposable2 = vscode.commands.registerCommand('rainbow-fart-waifu.opendir', function () {
-		let openpath = path.posix.join("file:", resources_dir);
-		vscode.env.openExternal(openpath);
+	let disposable2 = vscode.commands.registerCommand('rainbow-fart-waifu.showcommands', function () {
+		showRFWCommands();
 	});
 
 	context.subscriptions.push(disposable2);
-
-	let disposable3 = vscode.commands.registerCommand('rainbow-fart-waifu.openwebsite', function () {
-		vscode.env.openExternal("https://rfw.jnsii.com");
-	});
-
-	context.subscriptions.push(disposable3);
 }
 exports.activate = activate;
 

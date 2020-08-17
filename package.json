@@ -21,15 +21,11 @@
 		"commands": [
 			{
 				"command": "rainbow-fart-waifu.enable",
-				"title": "🌈 Enable Rainbow Fart Waifu (RFW)"
+				"title": "🌈 Enable Rainbow Fart Waifu"
 			},
 			{
-				"command": "rainbow-fart-waifu.opendir",
-				"title": "🌈 Open RFW Resources Dir"
-			},
-			{
-				"command": "rainbow-fart-waifu.openwebsite",
-				"title": "🌈 Download RFW Resource Packages"
+				"command": "rainbow-fart-waifu.showcommands",
+				"title": "🌈 Show Rainbow Fart Commands"
 			}
 		]
 	},
