@@ -1,8 +1,8 @@
 {
 	"name": "rainbow-fart-waifu",
-	"displayName": "rainbow-fart-waifu",
-	"description": "a virtual lover will ccompany with your programing time",
-	"version": "0.0.3",
+	"displayName": "🌈 Rainbow Fart Waifu",
+	"description": "a virtual lover will accompany with your programing time",
+	"version": "0.0.4",
 	"publisher": "ezshine",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -45,5 +45,7 @@
 		"typescript": "^3.8.3",
 		"vscode-test": "^1.4.0"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"messenger": "0.0.9"
+	}
 }
