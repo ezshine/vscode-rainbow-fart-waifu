@@ -3,7 +3,7 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "a virtual lover will accompany with your programing time",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"publisher": "ezshine",
 	"engines": {
 		"vscode": "^1.48.0"
