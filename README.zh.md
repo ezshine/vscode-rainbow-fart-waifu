@@ -16,16 +16,13 @@ Languages: 简体中文 | [English](./README.md)
 
 仅支持MacOS和Windows10
 
-## 使用方法，三条命令
+## 使用方法，2条命令
 
-1、🌈 Enable Rainbow Fart Waifu (RFW)
+1、🌈 Enable Rainbow Fart Waifu
 > 启用彩虹屁老婆插件
 
-2、🌈 Open RFW Resources Dir
-> 打开资源目录，如果你要手动更换语音包时使用
-
-3、🌈 Download RFW Resource Packages
-> 打开网页下载更多老婆模型包或语音包
+2、🌈 Show Rainbow Fart Waifu Commands
+> 呼出彩虹屁老婆命令列表
 
 ## 特性
 

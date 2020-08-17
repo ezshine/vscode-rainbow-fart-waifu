@@ -16,15 +16,11 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 
 Only supported MacOS and Windows10
 
-## Manual, Three Commands
+## Manual, 2 Commands
 
-1、🌈 Enable Rainbow Fart Waifu (RFW)
+1、🌈 Enable Rainbow Fart Waifu
 
-2、🌈 Open RFW Resources Dir
-> will open a folder that storage voicepackages and waifu model packages.
-
-3、🌈 Download RFW Resource Packages
-> will open website in browser, download waifu model packages and voice packages.
+2、🌈 Show Rainbow Fart Waifu Commands
 
 ## Features
 
