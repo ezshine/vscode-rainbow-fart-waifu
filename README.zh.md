@@ -6,14 +6,26 @@ Languages: 简体中文 | [English](./README.md)
 
 此插件的创意来自 [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart) ，兼容原版的语音包。并在功能上做了一些改进
 
-## 支持的编辑器和平台
-仅支持MacOS和Windows10
-
 ## 鸣谢
 
 1.插件包中包含了 [@justkowalski](https://github.com/JustKowalski)，[@PGG: 糖糖](https://github.com/heixiaobai/rainbow-fart-voice-pack) 两款语音包。
 2.插件中包含了cmdmp3win.exe，来自作者 [@James K. Lawless](http://jiml.us)
 3.插件中默认的老婆模型来自插画师 [@二夏](https://erxia207.lofter.com)，如果你想原创自己的老婆，可以找她约稿哦。
+
+## 支持的编辑器和平台
+
+仅支持MacOS和Windows10
+
+## 使用方法，三条命令
+
+1、🌈 Enable Rainbow Fart Waifu (RFW)
+> 启用彩虹屁老婆插件
+
+2、🌈 Open RFW Resources Dir
+> 打开资源目录，如果你要手动更换语音包时使用
+
+3、🌈 Download RFW Resource Packages
+> 打开网页下载更多老婆模型包或语音包
 
 ## 特性
 

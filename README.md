@@ -6,14 +6,25 @@ Languages: [简体中文](./README.zh.md) | English
 
 this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart), rewrite all the code. compatible all voicepackages, and add some new features.
 
-## Supported IDE & Platform
-Only supported MacOS and Windows10
-
 ## Special Thanks
 
 1.the extension included two voicepackages from [@justkowalski](https://github.com/JustKowalski)，[@PGG: 糖糖](https://github.com/heixiaobai/rainbow-fart-voice-pack).
 2.the extension included cmdmp3win.exe，from [@James K. Lawless](http://jiml.us)
 3.the default waifu model from [@二夏](https://erxia207.lofter.com)，if you want to design a original waifu only belong to you, contact her.
+
+## Supported IDE & Platform
+
+Only supported MacOS and Windows10
+
+## Manual, Three Commands
+
+1、🌈 Enable Rainbow Fart Waifu (RFW)
+
+2、🌈 Open RFW Resources Dir
+> will open a folder that storage voicepackages and waifu model packages.
+
+3、🌈 Download RFW Resource Packages
+> will open website in browser, download waifu model packages and voice packages.
 
 ## Features
 

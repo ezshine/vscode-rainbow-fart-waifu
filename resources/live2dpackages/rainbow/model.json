@@ -1,11 +1,11 @@
 {
 	"Version": 3,
 	"FileReferences": {
-		"Moc": "two.moc3",
+		"Moc": "rainbow.moc3",
 		"Textures": [
-			"two.2048/texture_00.png"
+			"rainbow.2048/texture_00.png"
 		],
-		"Physics": "two.physics3.json"
+		"Physics": "rainbow.physics3.json"
 	},
 	"layout":{
 		"width":5,
