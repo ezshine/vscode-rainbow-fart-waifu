@@ -9,41 +9,46 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 
 ## Special Thanks
 
-> 1.the extension included two voicepackages from [@justkowalski](https://github.com/JustKowalski)，[@PGG: 糖糖](https://github.com/heixiaobai/rainbow-fart-voice-pack).
-
-> 2.the extension included cmdmp3win.exe，from [@James K. Lawless](http://jiml.us)
-
-> 3.the default waifu model from [@二夏](https://erxia207.lofter.com)，if you want to design a original waifu only belong to you, contact her.
-
-> 4.the extension include another waifu model named keysoban, opensource by [@DenchiSoft](https://twitter.com/DenchiSoft/status/1036017773011525632).
+1. the extension included [@justkowalski](https://github.com/JustKowalski) chinese voice package. you can [get more voice packages from github](https://github.com/topics/rainbow-fart) 
+2. the extension included cmdmp3win.exe，from [@James K. Lawless](http://jiml.us) 
+3. the default waifu model from [@二夏](https://erxia207.lofter.com)，if you want to design a original waifu only belong to you, contact her. 
+4. the extension include another waifu model named keysoban, opensource by [@DenchiSoft](https://twitter.com/DenchiSoft/status/1036017773011525632).
 
 ## Supported Platform
 
-> Only supported MacOS and Windows10
+~~~~
+Only supported MacOS and Windows10
+~~~~
 
 ## Q&A
 
 > #### _Waifu dosn't display?_
 > A: You should download the waifu container from [https://rfw.jnsii.com](https://rfw.jnsii.com). after unextract all in zip file, run liv2dplayer.exe, call out commands list in vscod, try switch waifu model.
 
-## Manual, 2 Commands
+## Manual, Commands
 
-1、🌈 Enable Rainbow Fart Waifu
+🌈 Show Rainbow Fart Waifu Commands
 
-2、🌈 Show Rainbow Fart Waifu Commands
+- "Switch Voice Packages"
+- "Switch Waifu Models"
+- "Open Resource Directory"
+
+> if you download voicepackage or modelpackage, you need use this command to open resource directory, move those packages under the path
+
+- "Download Waifu Container and More Resources"
 
 ## Features
 
-> 1.Removed the WebUI, play audio file used 'afplay' in MacOS and 'cmdmp3win' in Windows10.
-
-> 2.Interact with WaifuContainer, Put an virtual wife on your desktop accompany your programing time.
+1. Removed the WebUI, play audio file used 'afplay' in MacOS and 'cmdmp3win' in Windows10. 
+2. Interact with WaifuContainer, Put a virtual wife on your desktop accompany your programing.
 
 ## VoicePackage Notice
-> some notice for customize voice package or use voice package download from the internet
+~~~~
+some notice for customize voice package or use voice package download from the internet
+~~~~
 
-> 1.use 'contributes.json' not 'manifest.json'.
-
-> 2.add texts in 'contributes.json' for match voice content.
+1. use 'contributes.json' not 'manifest.json'.
+2. add texts in 'contributes.json' for match voice content.
 
 ~~~~javascript
 "contributes": [
@@ -62,6 +67,9 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
     }
 ]
 ~~~~
+
+
+
 
 
 **Enjoy!**

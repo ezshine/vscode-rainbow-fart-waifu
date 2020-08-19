@@ -20,7 +20,7 @@ let resources_dir;
 let enabledRainbowFart = true;
 let enabledInteractWithWaifu = true;
 let inputDetectInterval = 1500;
-let voicePackageName = "sharonring";
+let voicePackageName = "justkowalski";
 let vpPath;
 let vpContributes;
 
@@ -205,7 +205,7 @@ function showRFWCommands(){
 	vscode.window.showQuickPick(
 		[
 			"Switch Voice Packages",
-			"Switch Waifu Model",
+			"Switch Waifu Models",
 			"Open Resource Directory",
 			"Download Waifu Container and More Resources"
 		],
@@ -219,7 +219,7 @@ function showRFWCommands(){
 	.then(function(msg){
 		if(msg === "Switch Voice Packages"){
 			quickPickVoicePackages();
-		}else if(msg === "Switch Waifu Model"){
+		}else if(msg === "Switch Waifu Models"){
 			quickPickWaifuModel();
 		}else if(msg === "Open Resource Directory"){
 			openResourceDir();
@@ -307,15 +307,16 @@ function activate(context) {
 	// The command has been defined in the package.json file
 	// Now provide the implementation of the command with  registerCommand
 	// The commandId parameter must match the command field in package.json
-	let disposable = vscode.commands.registerCommand('rainbow-fart-waifu.enable', function () {
-		// The code you place here will be executed every time your command is executed
+	// let disposable = vscode.commands.registerCommand('rainbow-fart-waifu.enable', function () {
+	// 	// The code you place here will be executed every time your command is executed
 
-		// Display a message box to the user
-		// vscode.window.showInformationMessage('Hello World from rainbow-fart-waifu!');
-		enabledRainbowFartWaifu();
-	});
+	// 	// Display a message box to the user
+	// 	// vscode.window.showInformationMessage('Hello World from rainbow-fart-waifu!');
+	// 	enabledRainbowFartWaifu();
+	// });
+	// context.subscriptions.push(disposable);
 
-	context.subscriptions.push(disposable);
+	enabledRainbowFartWaifu();
 
 	let disposable2 = vscode.commands.registerCommand('rainbow-fart-waifu.showcommands', function () {
 		showRFWCommands();

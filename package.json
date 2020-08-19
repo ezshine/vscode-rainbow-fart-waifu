@@ -3,12 +3,12 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "a virtual lover will accompany your programing",
-	"version": "0.0.11",
+	"version": "0.0.12",
 	"publisher": "ezshine",
 	"categories": [
 		"Other"
 	],
-	"keywords": ["rainbow","fart","rainbowfart","rainbow-fart","live2d","看板娘","kanbanniang","waifu","accompany","彩虹屁","老婆","lover","wife"],
+	"keywords": ["rainbow","fart","rainbowfart","rainbow-fart","raib","live2d","vtuber","vup","纸片人","看板娘","kanbanniang","waifu","accompany","彩虹屁","老婆","lover","wife","raibow"],
 	"engines": {
 		"vscode": "^1.48.0"
 	},
@@ -22,10 +22,6 @@
 	"main": "./extension.js",
 	"contributes": {
 		"commands": [
-			{
-				"command": "rainbow-fart-waifu.enable",
-				"title": "🌈 Enable Rainbow Fart Waifu"
-			},
 			{
 				"command": "rainbow-fart-waifu.showcommands",
 				"title": "🌈 Show Rainbow Fart Waifu Commands"
