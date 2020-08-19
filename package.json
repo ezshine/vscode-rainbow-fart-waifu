@@ -3,7 +3,7 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "a virtual lover will accompany your programing",
-	"version": "0.0.8",
+	"version": "0.0.9",
 	"publisher": "ezshine",
 	"engines": {
 		"vscode": "^1.48.0"
@@ -26,7 +26,7 @@
 			},
 			{
 				"command": "rainbow-fart-waifu.showcommands",
-				"title": "🌈 Show Rainbow Fart Commands"
+				"title": "🌈 Show Rainbow Fart Waifu Commands"
 			}
 		]
 	},

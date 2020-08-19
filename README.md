@@ -21,6 +21,11 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 
 > Only supported MacOS and Windows10
 
+## Q&A
+
+> #### _Waifu dosn't display?_
+> A: You should download the waifu container from [https://rfw.jnsii.com](https://rfw.jnsii.com). after unextract all in zip file, run liv2dplayer.exe, call out commands list in vscod, try switch waifu model.
+
 ## Manual, 2 Commands
 
 1、🌈 Enable Rainbow Fart Waifu

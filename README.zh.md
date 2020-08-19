@@ -21,6 +21,11 @@ Languages: 简体中文 | [English](./README.md)
 
 > 仅支持MacOS和Windows10
 
+## 使用答疑
+
+> #### _为什么开启后没有虚拟老婆出现？_
+> 答：因为要先下载虚拟老婆容器，请前往[https://rfw.jnsii.com](https://rfw.jnsii.com)下载老婆容器。下载后，双击运行liv2dplayer.exe，呼出命令列表，使用Switch Waifu Model来加载模型。
+
 ## 使用方法，2条命令
 
 1、🌈 Enable Rainbow Fart Waifu
