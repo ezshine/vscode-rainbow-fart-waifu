@@ -3,17 +3,19 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "a virtual lover will accompany your programing",
-	"version": "0.0.9",
+	"version": "0.0.11",
 	"publisher": "ezshine",
-	"engines": {
-		"vscode": "^1.48.0"
-	},
-	"repository": {
-		"url": "https://github.com/ezshine/vscode-rainbow-fart-waifu"
-	},
 	"categories": [
 		"Other"
 	],
+	"keywords": ["rainbow","fart","rainbowfart","rainbow-fart","live2d","看板娘","kanbanniang","waifu","accompany","彩虹屁","老婆","lover","wife"],
+	"engines": {
+		"vscode": "^1.48.0"
+	},
+	"license": "MIT",
+	"repository": {
+		"url": "https://github.com/ezshine/vscode-rainbow-fart-waifu"
+	},
 	"activationEvents": [
 		"*"
 	],
