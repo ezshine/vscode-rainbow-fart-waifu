@@ -85,6 +85,14 @@ some notice for customize voice package or use voice package download from the i
 ]
 ~~~~
 
+## Support Me
+
+---
+
+If this extension makes your programming happier, can I have a coke?
+
+![](./resources/donate.jpg)
+
 
 
 
