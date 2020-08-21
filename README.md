@@ -5,9 +5,15 @@ Website：[https://rfw.jnsii.com](https://rfw.jnsii.com/index_en.html)
 
 Languages: [简体中文](./README.zh.md) | English
 
+## Summary
+
+----
+
 this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart), rewrite all code. compatible all voicepackages, and add some new features.
 
 ## Special Thanks
+
+---
 
 1. the extension included [@justkowalski](https://github.com/JustKowalski) chinese voice package. you can [get more voice packages from github](https://github.com/topics/rainbow-fart) 
 2. the extension included cmdmp3win.exe，from [@James K. Lawless](http://jiml.us) 
@@ -16,16 +22,22 @@ this extension's idea from [@SaekiRaku](https://github.com/SaekiRaku/vscode-rain
 
 ## Supported Platform
 
+---
+
 ~~~~
 Only supported MacOS and Windows10
 ~~~~
 
 ## Q&A
 
+---
+
 #### _Waifu dosn't display?_
 > A: You need download the waifu container from [https://rfw.jnsii.com](https://rfw.jnsii.com). after unextract all in zip file, run liv2dplayer.exe, call out commands list in vscode, try switch waifu model.
 
 ## Manual, Commands
+
+---
 
 🌈 Show Rainbow Fart Waifu Commands
 
@@ -39,10 +51,15 @@ Only supported MacOS and Windows10
 
 ## Features
 
+---
+
 1. Removed the WebUI, play audio file used 'afplay' in MacOS and 'cmdmp3win' in Windows10. 
 2. Interact with WaifuContainer, Put a virtual wife on your desktop accompany your programing.
 
 ## VoicePackage Notice
+
+---
+
 ~~~~
 some notice for customize voice package or use voice package download from the internet
 ~~~~

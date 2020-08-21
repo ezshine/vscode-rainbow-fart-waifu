@@ -5,9 +5,15 @@
 
 Languages: 简体中文 | [English](./README.md)
 
+## 概述
+
+---
+
 此插件的创意来自 [@SaekiRaku](https://github.com/SaekiRaku/vscode-rainbow-fart) ，兼容原版的语音包。并在功能上做了一些改进
 
 ## 鸣谢
+
+---
 
 1. 插件包中包含了 [@justkowalski](https://github.com/JustKowalski) 中文语音包。你可以从github上[获取更多彩虹屁语音包](https://github.com/topics/rainbow-fart)。 
 2. 插件中包含了cmdmp3win.exe，来自作者 [@James K. Lawless](http://jiml.us)
@@ -16,16 +22,22 @@ Languages: 简体中文 | [English](./README.md)
 
 ## 支持的平台
 
+---
+
 ~~~~
 仅支持MacOS和Windows10
 ~~~~
 
 ## 使用答疑
 
+---
+
 #### _为什么开启后没有虚拟老婆出现？_
 > 答：因为要先下载虚拟老婆容器，请前往[https://rfw.jnsii.com](https://rfw.jnsii.com)下载老婆容器。下载后，双击运行liv2dplayer.exe，在vscode中呼出命令列表，使用Switch Waifu Model来加载模型。
 
 ## 使用方法，命令列表
+
+---
 
 - "Switch Voice Packages"
 
@@ -45,10 +57,14 @@ Languages: 简体中文 | [English](./README.md)
 
 ## 特性
 
+---
+
 1. 无须打开网页即可播放彩虹屁语音。
 2. 可与彩虹屁老婆容器互动，在你的桌面上放置一个虚拟老婆陪你写代码。
 
 ## 语音包使用注意事项
+
+---
 
 ~~~~
 当你自定义语音包或从互联网上下载语音包需要注意的事项
