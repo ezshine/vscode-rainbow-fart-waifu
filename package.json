@@ -3,12 +3,12 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "Rainbow Fart Waifu is an extension that put a virtual lover on your desktop and keeps giving you compliment while you are coding. supported python, javascript, c#, php, java, vue...and all language",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"publisher": "ezshine",
 	"categories": [
 		"Other"
 	],
-	"keywords": ["rainbow","fart","rainbowfart","rainbow-fart","raib","live2d","vtuber","vup","纸片人","看板娘","kanbanniang","waifu","accompany","彩虹屁","老婆","彩虹屁老婆","彩虹老婆","lover","wife","raibow"],
+	"keywords": ["rainbow","fart","rainbowfart","rainbow-fart","raib","live2d","vtuber","vup","纸片人","看板娘","kanbanniang","waifu","accompany","彩虹屁","老婆","彩虹屁老婆","彩虹老婆","lover","wife","raibow","rain"],
 	"engines": {
 		"vscode": "^1.48.0"
 	},
