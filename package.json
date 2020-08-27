@@ -3,7 +3,7 @@
 	"icon": "resources/icon.png",
 	"displayName": "🌈 Rainbow Fart Waifu",
 	"description": "Rainbow Fart Waifu is an extension that put a virtual lover on your desktop and keeps giving you compliment while you are coding. supported python, javascript, c#, php, java, vue...and all language",
-	"version": "0.0.16",
+	"version": "0.0.17",
 	"publisher": "ezshine",
 	"categories": [
 		"Other"

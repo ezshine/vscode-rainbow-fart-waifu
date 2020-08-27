@@ -204,6 +204,7 @@ function setupVoicePackage() {
 function showRFWCommands(){
 	vscode.window.showQuickPick(
 		[
+			"Turn Off/On Rainbow Fart Voice",
 			"Switch Voice Packages",
 			"Switch Waifu Models",
 			"Open Resource Directory",
@@ -225,6 +226,8 @@ function showRFWCommands(){
 			openResourceDir();
 		}else if(msg === "Download Waifu Container and More Resources"){
 			openWebsite();
+		}else if(msg === "Turn Off/On Rainbow Fart Voice"){
+			enabledRainbowFart=!enabledRainbowFart;
 		}
 	})
 }
