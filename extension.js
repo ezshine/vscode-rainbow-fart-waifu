@@ -25,10 +25,10 @@ let vpPath;
 let vpContributes;
 
 async function enabledRainbowFartWaifu(){
-	debugLog("好戏开始了");
-	debugLog("当前时间：" + Date.now());
+	debugLog("Extension Start");
+	debugLog("Now Time: " + Date.now());
 	ostype = os.type;
-	debugLog("当前系统：" + ostype);
+	debugLog("Now OS: " + ostype);
 	
 	const mp3Player = (ostype == "Darwin" ? "afplay" : path.posix.join(resources_dir, "players", "mp3player.exe"));
 
@@ -118,11 +118,11 @@ async function enabledRainbowFartWaifu(){
 
 		//命中以及和上次命中结果不一样时才播放，加入彩虹屁开关
 		if (voices.length != 0 && last_voice_mark != voice_mark) {
-			debugLog("命中关键词：" + voice_mark);
+			debugLog("Catch Keyword：" + voice_mark);
 
 			let voice_index = Math.floor(Math.random() * voices.length);
 			if (enabledRainbowFart) {
-				debugLog("即将播放音频：");
+				debugLog("Ready to play：");
 				last_voice_mark = voice_mark;
 
 				//音频播放器命令路径，将空格转义
@@ -133,7 +133,7 @@ async function enabledRainbowFartWaifu(){
 				debugLog(cmd);
 				exec(cmd);
 			} else {
-				debugLog("彩虹屁语音未启用");
+				debugLog("Rainbow Fart Voice is Disabled");
 			}
 
 			//和老婆进行互动
@@ -165,14 +165,14 @@ function changeWifeModel(){
 }
 
 function showWifeMotion(motionfile) {
-	debugLog("切换老婆的动作：" + (motionfile ? motionfile : "随机"));
+	debugLog("Tell Waifu Change Motion: " + (motionfile ? motionfile : "Random"));
 	client.shout('changeMotion', {
 		motionfile: motionfile
 	}); //motionfile
 }
 
 function showWifeTextBubble(str) {
-	debugLog("让老婆显示文字：" + str);
+	debugLog("Tell Waifu Show Bubble " + str);
 	client.shout("say", {
 		text: str
 	});
@@ -188,11 +188,11 @@ function setupVoicePackage() {
 	vpPath = path.posix.join(resources_dir, "voicepackages", voicePackageName);
 	//校验语音包
 	if (!fs.existsSync(vpPath)) {
-		showInformation('没有找到语音包：' + voicePackageName);
+		showInformation('Not found ' + voicePackageName);
 	} else if (!fs.existsSync(path.posix.join(vpPath, "contributes.json"))) {
-		showInformation('没有找到语音包配置文件(contributes.json)');
+		showInformation('Not found contributes.json in this voice package');
 	} else {
-		debugLog('已启用语音包' + voicePackageName);
+		debugLog('enabled voice package: ' + voicePackageName);
 	}
 
 	//语音包配置表
@@ -204,7 +204,7 @@ function setupVoicePackage() {
 function showRFWCommands(){
 	vscode.window.showQuickPick(
 		[
-			"Turn Off/On Rainbow Fart Voice",
+			"Turn "+(enabledRainbowFart?"Off":"On")+" Rainbow Fart Voice",
 			"Switch Voice Packages",
 			"Switch Waifu Models",
 			"Open Resource Directory",
@@ -226,8 +226,9 @@ function showRFWCommands(){
 			openResourceDir();
 		}else if(msg === "Download Waifu Container and More Resources"){
 			openWebsite();
-		}else if(msg === "Turn Off/On Rainbow Fart Voice"){
+		}else if(msg === "Turn On Rainbow Fart Voice" || msg === "Turn Off Rainbow Fart Voice"){
 			enabledRainbowFart=!enabledRainbowFart;
+			vscode.window.showInformationMessage('Rainbow Fart Voice is '+(enabledRainbowFart?'Enabled':'Disabled'));
 		}
 	})
 }
@@ -243,7 +244,7 @@ function quickPickVoicePackages(){
 		if (stat.isDirectory()) {
 			res.push({
 				label: filename,
-				description: (filename == voicePackageName ? "使用中" : "")
+				description: (filename == voicePackageName ? "in use" : "")
 			});
 		}
 	});
