@@ -160,7 +160,7 @@ function debugLog(str){
 
 function changeWifeModel(){
 	client.shout("changeModel", {
-		model: path.posix.join(lpPath, "model.json")
+		model: lpPath.lastIndexOf(".waifu")>=0?lpPath:path.posix.join(lpPath, "model.json")
 	});
 }
 
@@ -269,9 +269,10 @@ function quickPickWaifuModel(){
 		files = fs.readdirSync(vpDir);
 	files.forEach(function(filename) {
 		var filepath = path.posix.join(vpDir, filename),
+			extName = path.extname(filename),
 			stat = fs.lstatSync(filepath);
 
-		if (stat.isDirectory()) {
+		if (stat.isDirectory()||extName===".waifu") {
 			res.push(filename);
 		}
 	});

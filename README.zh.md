@@ -20,6 +20,8 @@ Languages: 简体中文 | [English](./README.md)
 3. 插件中默认的老婆模型来自插画师 [@二夏](https://erxia207.lofter.com)，如果你想原创自己的老婆，可以找她约稿哦。
 4. 插件中还包含了一款开源的血小板模型，由来自 [@DenchiSoft](https://twitter.com/DenchiSoft/status/1036017773011525632) 提供。
 
+[更多彩虹屁老婆模型](https://github.com/ezshine/live2d-model-collections)
+
 ## 支持的平台
 
 ---
@@ -33,11 +35,13 @@ Languages: 简体中文 | [English](./README.md)
 ---
 
 #### _为什么开启后没有虚拟老婆出现？_
-> 答：因为要先下载虚拟老婆容器，请前往[https://rfw.jnsii.com](https://rfw.jnsii.com)下载老婆容器。下载后，双击运行liv2dplayer.exe，在vscode中呼出命令列表，使用Switch Waifu Model来加载模型。
+> 答：因为要先[下载彩虹屁老婆容器](https://github.com/ezshine/live2d-model-collections)。下载后，双击运行liv2dplayer.exe，在vscode中呼出命令列表，使用Switch Waifu Model来加载模型。
 
 ## 使用方法，命令列表
 
 ---
+
+🌈 Show Rainbow Fart Waifu Commands
 
 - "Switch Voice Packages"
 
